@@ -14,7 +14,6 @@ export default function Result({
     fontWeight: 'bold'
   };
 
-  console.log('from results page', errorMessage);
   return (
     <div className="word-result">
       {word.length === 0 ? (
