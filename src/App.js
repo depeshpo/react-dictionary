@@ -56,8 +56,6 @@ function App() {
           setSearchResults([]);
           setErrorMessage(undefined);
         }
-
-        // console.log('response', response);
       } catch (error) {
         if (error.status === 404) {
           setErrorMessage(error.data);
@@ -72,9 +70,6 @@ function App() {
     word && selectedLanguage && fetchAPIResponse();
   }, [word, selectedLanguage]);
 
-  // console.log('light mode', lightMode);
-  console.log('data', searchResults);
-  console.log('error', errorMessage);
   return (
     <div
       className="App"
